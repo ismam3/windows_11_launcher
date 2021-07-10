@@ -1,0 +1,38 @@
+{
+    "file_explorer":{
+        "run_command":"explorer"
+    },
+    "ms_edge":{
+        "run_command":"start microsoft-edge:"
+    },
+    "photos":{
+        "run_command":"start ms-photos:"
+    },
+    "mail":{
+        "run_command":"start outlookmail:"
+    },
+    "videos":{
+        "run_command":"start mswindowsvideo:"
+    },
+    "calculator":{
+        "run_command":"start calc"
+    },
+    "ms-paint":{
+        "run_command":"start mspaint"
+    },
+    "settings":{
+        "run_command":"start ms-settings:"
+    },
+    "ms-word":{
+        "run_command":"start winword"
+    },
+    "ms-powerpoint":{
+        "run_command":"start powerpnt"
+    },
+    "ms-excel":{
+        "run_command":"start excel"
+    },
+    "cmd":{
+        "run_command":"start"
+    }
+}

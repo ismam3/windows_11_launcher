@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="icons">
+        <img src="chromeicon.png" width="74px" alt="">
+        <div>Google Chrome</div>
+    </div>
+    <div class="taskbar">
+        <div class="taskicon">
+            <img class="tasks" id="startbutton" src="icons/startbutton(1).png"  onclick="clicked()">
+            <img class="tasks" id="cortana" src="icons/cortona.png">
+            <img class="tasks" id="split" src="icons/split.png">
+            <img class="tasks" id="multitask" src="icons/multitask.png">
+            <img class="tasks" id="ms_edge" src="icons/msedge.svg">
+            <img class="tasks" id="file_explorer" src="icons/file_explorer.png">
+            <img class="tasks" id="notepad" src="icons/notepad.png">
+            <img class="tasks" id="store" src="icons/store.png">
+        </div>
+        <div class="right_bar" style="margin-top: 5px;">
+            <img src="icons/slider.png">
+            <img src="icons/network.png">
+            <div class="timestamp">
+                <div id="time"></div>
+                <div id="date"></div>
+            </div>
+                
+            <img src="icons/notification.png">
+        </div>
+    </div>
+    <div id="startmenu" class="startmenu">
+        <!-- <img src="startmenu.PNG" alt=""> -->
+        <div class="pinned">
+            <h4>Pinned</h4>
+            <div class="appk">
+                <img class="icons" id="videos"  src="icons/videos.png">
+                <span>Videos</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="photos" src="icons/ms-photos.png">
+                <span>Photos</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="mail" src="icons/mail.png">
+                <span>Mail</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="calculator" src="icons/calculator.png">
+                <span>Calculator</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="file_explorer" src="icons/file_explorer.png">
+                <span>File explorer</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="ms-paint" src="icons/ms-paint.png">
+                <span>Paint</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="ms_edge" src="icons/msedge.svg">
+                <span>Microsoft Edge</span>
+            </div>
+            <div class="appk">
+                <img class="icons" id="settings" src="icons/settings.png">
+                <span>Settings</span>
+            </div>
+        </div>
+        <div class="recommended">
+            <h4>Recommended</h4>
+            <div class="applications">
+                <div class="appk">
+                    <img class="icons" id="ms-word" src="icons/msword.png">
+                    <div class="appk_title">Word</div>
+                </div>
+                <div class="appk">
+                    <img class="icons" id="ms-powerpoint" src="icons/mspowerpoint.png">
+                    <div class="appk_title">Powerpoint</div>
+                </div>
+                <div class="appk">
+                    <img class="icons" id="ms-excel" src="icons/msexcel.png" onclick="kk()">
+                    <div class="appk_title">Excel</div>
+                </div>
+                <div class="appk">
+                    <img class="icons" id="cmd" src="icons/cmd.png">
+                    <div class="appk_title">Command Prompt</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="user_info">
+                <img src="icons/userico.png">
+                <div style="display: grid;grid-template-rows: repeat(3, 1fr);">
+                    <div style="display: inline-block;"></div>
+                    <div id="user_name"></div>
+                    <div style="display: inline-block;"></div>
+                </div>
+            </div>
+            <div class="exit">
+                <img class="icons" id="exit" src="icons/exit.png">
+            </div>
+        </div>
+    </div>
+    <video autoplay muted id="vid">
+        <source src="video.webm" type="video/webm">
+    </video>
+</body>
+<script>
+    function clicked(){
+        let startmenu = document.getElementById("startmenu");
+            if(startmenu.style.bottom == "50px"){
+                startmenu.style.bottom = "-655px";
+            }
+            else{
+                startmenu.style.bottom = "50px";
+            }
+    }
+</script>
+<script src="script.js"></script>
+</html>

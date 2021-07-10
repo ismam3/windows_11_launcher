@@ -1,0 +1,21 @@
+{
+  "name": "windows_11_launcher",
+  "version": "1.0.0",
+  "description": "A launcher for windows 11",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "author": "Ismam Labib",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^13.1.6",
+    "eslint": "^7.30.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
