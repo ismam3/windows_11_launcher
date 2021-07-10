@@ -36,59 +36,123 @@
     </div>
     <div id="startmenu" class="startmenu">
         <!-- <img src="startmenu.PNG" alt=""> -->
-        <div class="pinned">
-            <h4>Pinned</h4>
-            <div class="appk">
-                <img class="icons" id="videos"  src="icons/videos.png">
-                <span>Videos</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="photos" src="icons/ms-photos.png">
-                <span>Photos</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="mail" src="icons/mail.png">
-                <span>Mail</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="calculator" src="icons/calculator.png">
-                <span>Calculator</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="file_explorer" src="icons/file_explorer.png">
-                <span>File explorer</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="ms-paint" src="icons/ms-paint.png">
-                <span>Paint</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="ms_edge" src="icons/msedge.svg">
-                <span>Microsoft Edge</span>
-            </div>
-            <div class="appk">
-                <img class="icons" id="settings" src="icons/settings.png">
-                <span>Settings</span>
-            </div>
-        </div>
-        <div class="recommended">
-            <h4>Recommended</h4>
-            <div class="applications">
-                <div class="appk">
-                    <img class="icons" id="ms-word" src="icons/msword.png">
-                    <div class="appk_title">Word</div>
+        <div class="tiles" id="tiles">
+            <div class="start_tile">
+                <div class="pinned">
+                    <h4>Pinned</h4> 
+                    <button onclick="all_apps_button()">All apps    &gt;</button>
+                    <div class="appk">
+                        <img class="icons" id="videos"  src="icons/videos.png">
+                        <span>Videos</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="photos" src="icons/ms-photos.png">
+                        <span>Photos</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="mail" src="icons/mail.png">
+                        <span>Mail</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="calculator" src="icons/calculator.png">
+                        <span>Calculator</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="file_explorer" src="icons/file_explorer.png">
+                        <span>File explorer</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-paint" src="icons/ms-paint.png">
+                        <span>Paint</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms_edge" src="icons/msedge.svg">
+                        <span>Microsoft Edge</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="settings" src="icons/settings.png">
+                        <span>Settings</span>
+                    </div>
                 </div>
-                <div class="appk">
-                    <img class="icons" id="ms-powerpoint" src="icons/mspowerpoint.png">
-                    <div class="appk_title">Powerpoint</div>
+                <div class="recommended">
+                    <h4>Recommended</h4>
+                    <div class="applications">
+                        <div class="appk">
+                            <img class="icons" id="ms-word" src="icons/msword.png">
+                            <div class="appk_title">Word</div>
+                        </div>
+                        <div class="appk">
+                            <img class="icons" id="ms-powerpoint" src="icons/mspowerpoint.png">
+                            <div class="appk_title">Powerpoint</div>
+                        </div>
+                        <div class="appk">
+                            <img class="icons" id="ms-excel" src="icons/msexcel.png" onclick="kk()">
+                            <div class="appk_title">Excel</div>
+                        </div>
+                        <div class="appk">
+                            <img class="icons" id="cmd" src="icons/cmd.png">
+                            <div class="appk_title">Command Prompt</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="appk">
-                    <img class="icons" id="ms-excel" src="icons/msexcel.png" onclick="kk()">
-                    <div class="appk_title">Excel</div>
-                </div>
-                <div class="appk">
-                    <img class="icons" id="cmd" src="icons/cmd.png">
-                    <div class="appk_title">Command Prompt</div>
+            </div>
+            <div class="application_tile">
+                <h4>All apps</h4>
+                <button onclick="back_to_start_tile()">Start</button>
+                <div class="applications_scroll">
+                    <h3>A</h3>
+                    <div class="appk">
+                        <img class="icons" id="ms-clock" src="icons/ms-clock.png">
+                        <div class="appk_title">Alarms & Clock</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-word" src="icons/msword.png">
+                        <div class="appk_title">Word</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-powerpoint" src="icons/mspowerpoint.png">
+                        <div class="appk_title">Powerpoint</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-excel" src="icons/msexcel.png" onclick="kk()">
+                        <div class="appk_title">Excel</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="cmd" src="icons/cmd.png">
+                        <div class="appk_title">Command Prompt</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="videos"  src="icons/videos.png">
+                        <span>Videos</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="photos" src="icons/ms-photos.png">
+                        <span>Photos</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="mail" src="icons/mail.png">
+                        <span>Mail</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="calculator" src="icons/calculator.png">
+                        <span>Calculator</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="file_explorer" src="icons/file_explorer.png">
+                        <span>File explorer</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-paint" src="icons/ms-paint.png">
+                        <span>Paint</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms_edge" src="icons/msedge.svg">
+                        <span>Microsoft Edge</span>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="settings" src="icons/settings.png">
+                        <span>Settings</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,16 +175,5 @@
         <source src="video.webm" type="video/webm">
     </video>
 </body>
-<script>
-    function clicked(){
-        let startmenu = document.getElementById("startmenu");
-            if(startmenu.style.bottom == "50px"){
-                startmenu.style.bottom = "-655px";
-            }
-            else{
-                startmenu.style.bottom = "50px";
-            }
-    }
-</script>
 <script src="script.js"></script>
 </html>

@@ -34,5 +34,8 @@
     },
     "cmd":{
         "run_command":"start"
+    },
+    "ms-clock":{
+        "run_command":"start ms-clock:"
     }
 }

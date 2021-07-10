@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable indent */
 //let taskbar = document.getElementsByClassName("taskbar")[0];
 const os = require("os");
@@ -74,6 +75,29 @@ document.querySelectorAll(".icons").forEach(item=>{
         }
 	});
 });
+
+
+function clicked(){
+    let startmenu = document.getElementById("startmenu");
+
+        if(startmenu.style.bottom == "50px"){
+            document.getElementById("tiles").style.transform = "translate(0px,0)";
+            startmenu.style.bottom = "-655px";
+        }
+        else{
+            startmenu.style.bottom = "50px";
+        }
+}
+
+// eslint-disable-next-line no-unused-vars
+function all_apps_button(){
+    document.getElementById("tiles").style.transform = "translate(-650px,0)";
+}
+
+// eslint-disable-next-line no-unused-vars
+function back_to_start_tile(){
+    document.getElementById("tiles").style.transform = "translate(0px,0)";
+}
 
   
 
