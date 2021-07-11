@@ -9,7 +9,17 @@ body{
     overflow: hidden;
     height: 100vh;
 }
-
+.desktop{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:(100% - 45px);
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(7,1fr);
+    z-index: 2;
+}
 .taskbar{
     background-color: #f3f3f3;
     width: 100%;

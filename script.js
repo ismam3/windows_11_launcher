@@ -122,7 +122,16 @@ function refresh(){
 }
 
 function contextCommand(clicked_id){
-    console.log(clicked_id);
+    exec(taskbar_json[clicked_id].run_command,function(err, data){
+        console.log(err);
+        console.log(data.toString());
+    });
+}
+
+
+function changeBg(){
+    document.getElementById("background").innerHTML = null;
+    document.getElementById("background").style = "background:skyblue;position:absolute;top:0;left:0;z-index:1;width:100%;height:100%";
 }
 
   

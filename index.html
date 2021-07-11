@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="icons">
-        <img src="chromeicon.png" width="74px" alt="">
-        <div>Google Chrome</div>
+    <div class="desktop">
+        <div class="desktop_apps">
+            <img class="icons" src="chromeicon.png" width="74px" alt="">
+            <div>Google Chrome</div>
+        </div>
     </div>
     <div class="taskbar">
         <div class="taskicon">
@@ -231,21 +233,23 @@
         </div>
         <div class="line">
             <img src="icons/display.png">
-            <button>Change display background</button>
+            <button onclick="changeBg()">Change display background</button>
         </div>
         <div class="line" id="cmd">
             <img src="icons/cmd.png">
-            <button onclick="contextCommand(this.id)">Open Command Prompt</button>
+            <button onclick="contextCommand('cmd')">Open Command Prompt</button>
         </div>
         <div class="line" id="settings">
             <img src="icons/settings.png">
-            <button onclick="contextCommand(this.id)">Settings</button>
+            <button onclick="contextCommand('settings')">Settings</button>
         </div>
     </div>
 </div>
-    <video autoplay muted id="vid">
-        <source src="video.webm" type="video/webm">
-    </video>
+    <div id="background">
+        <video autoplay muted>
+            <source src="video.webm" type="video/webm">
+        </video>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
