@@ -145,12 +145,7 @@ body{
     grid-column-gap: 50px;
 }
 .recommended .applications .appk{
-    padding: 5px;
-}
-.recommended .applications .appk span{
-    font-size: 15px;
-    color: black;
-    font-weight: 300;
+    padding: 10px;
 }
 .recommended .applications .appk .appk_title{
     vertical-align: middle;
@@ -222,4 +217,39 @@ body{
 }
 .exit{
     float: right;
+}
+#contextmenu{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    z-index: 109;
+    background: white;
+    transition: all 0.3s ease-in;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px gray;
+    display: none;
+}
+#contextmenu .line{
+    display: flex;
+    padding: 3px;
+    padding-top:6px;
+}
+#contextmenu .line:hover{
+    background:#e8e8e8;
+}
+#contextmenu div img{
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+#contextmenu div button{
+    width: calc(100%- 25px);
+    border-width: 0;
+    margin-top: 3px;
+    padding: 2px;
+    text-align: left;
+    display: inline;
+    background: transparent;
 }

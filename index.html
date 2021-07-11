@@ -222,6 +222,26 @@
             </div>
         </div>
     </div>
+    <div id="contextmenu">
+        <div class="line">
+            <button style="margin-left: 20px;" onclick="refresh()">Refresh</button>
+        </div>
+        <div class="line">
+            <button style="margin-left: 20px;">Preferrence</button>
+        </div>
+        <div class="line">
+            <img src="icons/display.png">
+            <button>Change display background</button>
+        </div>
+        <div class="line" id="cmd">
+            <img src="icons/cmd.png">
+            <button onclick="contextCommand(this.id)">Open Command Prompt</button>
+        </div>
+        <div class="line" id="settings">
+            <img src="icons/settings.png">
+            <button onclick="contextCommand(this.id)">Settings</button>
+        </div>
+    </div>
 </div>
     <video autoplay muted id="vid">
         <source src="video.webm" type="video/webm">

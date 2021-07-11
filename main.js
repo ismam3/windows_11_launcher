@@ -21,10 +21,18 @@ function createWindow(){
 			enableRemoteModule: true
 		}
 	});
-	window.removeMenu();
+	// window.removeMenu();
 	window.maximize();
 	window.loadFile("index.html");
-	// window.webContents.openDevTools();
+	window.webContents.openDevTools();
+
+
+
+	ipcMain.on("refresh",(evnt, data)=>{
+		if(data){
+			window.reload();
+		}
+	});
     
 }
 

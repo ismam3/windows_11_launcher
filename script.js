@@ -2,9 +2,11 @@
 /* eslint-disable indent */
 //let taskbar = document.getElementsByClassName("taskbar")[0];
 const os = require("os");
-const {ipcRenderer} = require("electron");
+const {ipcRenderer, globalShortcut} = require("electron");
 const process = require("process");
 let user_name = os.userInfo().username;
+
+
 setInterval(()=>{
     let time = new Date();
     let hh = time.getHours();
@@ -50,10 +52,10 @@ document.querySelectorAll(".tasks").forEach(item=>{
 });
 
 
-document.querySelectorAll(".icons").forEach(item=>{
-	item.addEventListener("click",()=>{
-        console.log(item.id);
-        let item_id = item.id;
+document.querySelectorAll(".appk").forEach(item=>{
+    item.addEventListener("click",()=>{
+        let images = item.getElementsByTagName("img");
+        let item_id = images[0].id;
         if(item_id == "startbutton"){
             // let startmenu = document.getElementById("startmenu");
             // if(startmenu.style.bottom == "50px"){
@@ -73,7 +75,7 @@ document.querySelectorAll(".icons").forEach(item=>{
                 console.log(data.toString());
             });
         }
-	});
+    });
 });
 
 
@@ -89,6 +91,22 @@ function clicked(){
         }
 }
 
+document.body.addEventListener("contextmenu",(event)=>{
+    console.log("right click");
+    var cX = event.clientX;
+    var cy = event.clientY;
+    console.log(cX+","+cy);
+    document.getElementById("contextmenu").style.display = "block";
+    document.getElementById("contextmenu").style.top = cy + "px";
+    document.getElementById("contextmenu").style.left = cX + "px";
+});
+
+document.body.addEventListener("click",()=>{
+    if(document.getElementById("contextmenu").style.display == "block"){
+        document.getElementById("contextmenu").style.display = "none";
+    }
+});
+
 // eslint-disable-next-line no-unused-vars
 function all_apps_button(){
     document.getElementById("tiles").style.transform = "translate(-650px,0)";
@@ -97,6 +115,14 @@ function all_apps_button(){
 // eslint-disable-next-line no-unused-vars
 function back_to_start_tile(){
     document.getElementById("tiles").style.transform = "translate(0px,0)";
+}
+
+function refresh(){
+    ipcRenderer.send("refresh",true);
+}
+
+function contextCommand(clicked_id){
+    console.log(clicked_id);
 }
 
   
