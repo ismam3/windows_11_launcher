@@ -15,7 +15,7 @@
     <div class="taskbar">
         <div class="taskicon">
             <img class="tasks" id="startbutton" src="icons/startbutton(1).png"  onclick="clicked()">
-            <img class="tasks" id="cortana" src="icons/cortona.png">
+            <img class="tasks" id="cortana" src="icons/cortana.png">
             <img class="tasks" id="split" src="icons/split.png">
             <img class="tasks" id="multitask" src="icons/multitask.png">
             <img class="tasks" id="ms_edge" src="icons/msedge.svg">
@@ -98,65 +98,116 @@
             </div>
             <div class="application_tile">
                 <h4>All apps</h4>
-                <button onclick="back_to_start_tile()">Start</button>
+                <button onclick="back_to_start_tile()">&lt;  Start</button>
                 <div class="applications_scroll">
+                    <h3>#</h3>
+                    <div class="appk">
+                        <img class="icons" id="3dviewer" src="icons/3dviewer.png">
+                        <div class="appk_title">3D viewer</div>
+                    </div>
                     <h3>A</h3>
                     <div class="appk">
                         <img class="icons" id="ms-clock" src="icons/ms-clock.png">
                         <div class="appk_title">Alarms & Clock</div>
                     </div>
-                    <div class="appk">
-                        <img class="icons" id="ms-word" src="icons/msword.png">
-                        <div class="appk_title">Word</div>
-                    </div>
-                    <div class="appk">
-                        <img class="icons" id="ms-powerpoint" src="icons/mspowerpoint.png">
-                        <div class="appk_title">Powerpoint</div>
-                    </div>
-                    <div class="appk">
-                        <img class="icons" id="ms-excel" src="icons/msexcel.png" onclick="kk()">
-                        <div class="appk_title">Excel</div>
-                    </div>
-                    <div class="appk">
-                        <img class="icons" id="cmd" src="icons/cmd.png">
-                        <div class="appk_title">Command Prompt</div>
-                    </div>
-                    <div class="appk">
-                        <img class="icons" id="videos"  src="icons/videos.png">
-                        <span>Videos</span>
-                    </div>
-                    <div class="appk">
-                        <img class="icons" id="photos" src="icons/ms-photos.png">
-                        <span>Photos</span>
-                    </div>
-                    <div class="appk">
-                        <img class="icons" id="mail" src="icons/mail.png">
-                        <span>Mail</span>
-                    </div>
+                    <h3>C</h3>
                     <div class="appk">
                         <img class="icons" id="calculator" src="icons/calculator.png">
-                        <span>Calculator</span>
+                        <div class="appk_title">Calculator</div>
                     </div>
                     <div class="appk">
-                        <img class="icons" id="file_explorer" src="icons/file_explorer.png">
-                        <span>File explorer</span>
+                        <img class="icons" id="Calendar" src="icons/calendar.png">
+                        <div class="appk_title">Calendar</div>
+                    </div>
+
+                    <div class="appk">
+                        <img class="icons" id="cortana" src="icons/cortana.png">
+                        <div class="appk_title">Cortana</div>
+                    </div>
+                    <h3>F</h3>
+                    <div class="appk">
+                        <img class="icons" id="feedback-hub" src="icons/feedback-hub.png">
+                        <div class="appk_title">Feedback Hub</div>
+                    </div>
+                    <h3>G</h3>
+                    <div class="appk">
+                        <img class="icons" id="get-help" src="icons/get-help.png">
+                        <div class="appk_title">Get Help</div>
                     </div>
                     <div class="appk">
-                        <img class="icons" id="ms-paint" src="icons/ms-paint.png">
-                        <span>Paint</span>
+                        <img class="icons" id="groove_music" src="icons/groove_music.png">
+                        <div class="appk_title">Groove Music</div>
+                    </div>
+                    <h3>M</h3>
+                    <div class="appk">
+                        <img class="icons" id="mail" src="icons/mail.png">
+                        <div class="appk_title">Mail</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="maps" src="icons/maps.png">
+                        <div class="appk_title">Maps</div>
                     </div>
                     <div class="appk">
                         <img class="icons" id="ms_edge" src="icons/msedge.svg">
-                        <span>Microsoft Edge</span>
+                        <div class="appk_title">Microsoft Edge</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-news" src="icons/ms-news.png">
+                        <div class="appk_title">Microsoft News</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="ms-solitaire-collection" src="icons/ms-solitaire-collection.png">
+                        <div class="appk_title">Microsoft Solitaire Collection</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="store" src="icons/store.png">
+                        <div class="appk_title">Microsoft Store</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="videos" src="icons/videos.png">
+                        <div class="appk_title">Movies & TV</div>
+                    </div>
+                    <h3>O</h3>
+                    <div class="appk">
+                        <img class="icons" id="onenote" src="icons/onenote.png">
+                        <div class="appk_title">OneNote</div>
+                    </div>
+                    <h3>P</h3>
+                    <div class="appk">
+                        <img class="icons" id="paint-3d" src="icons/paint-3d.png">
+                        <div class="appk_title">Paint 3D</div>
+                    </div>
+                    <div class="appk">
+                        <img class="icons" id="photos" src="icons/ms-photos.png">
+                        <div class="appk_title">Photos</div>
+                    </div>
+                    <h3>S</h3>
+                    <div class="appk">
+                        <img class="icons" id="snipping_tool" src="icons/snipping_tool.png">
+                        <div class="appk_title">Snipping Tool</div>
                     </div>
                     <div class="appk">
                         <img class="icons" id="settings" src="icons/settings.png">
-                        <span>Settings</span>
+                        <div class="appk_title">Settings</div>
                     </div>
-                </div>
+                    <h3>T</h3>
+                    <div class="appk">
+                        <img class="icons" id="ms-tips" src="icons/ms-tips.png">
+                        <div class="appk_title">Tips</div>
+                    </div>
+                    <h3>W</h3>
+                    <div class="appk">
+                        <img class="icons" id="ms-weather" src="icons/ms-weather.png">
+                        <div class="appk_title">Weather</div>
+                    </div>
+                    <h3>X</h3>
+                    <div class="appk">
+                        <img class="icons" id="xbox" src="icons/xbox.png">
+                        <div class="appk_title">Xbox</div>
+                    </div>
             </div>
         </div>
-        
+        </div>
         <div class="footer">
             <div class="user_info">
                 <img src="icons/userico.png">
@@ -171,6 +222,7 @@
             </div>
         </div>
     </div>
+</div>
     <video autoplay muted id="vid">
         <source src="video.webm" type="video/webm">
     </video>

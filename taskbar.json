@@ -37,5 +37,50 @@
     },
     "ms-clock":{
         "run_command":"start ms-clock:"
+    },
+    "3Dviewer":{
+        "run_command":"start com.microsoft.builder3d:"
+    },
+    "cortana":{
+        "run_command":"start ms-cortana:"
+    },
+    "feedback-hub":{
+        "run_command":"start feedback-hub:"
+    },
+    "get-help":{
+        "run_command":"start ms-contact-support:"
+    },
+    "groove_music":{
+        "run_command":"start mswindowsmusic:"
+    },
+    "maps":{
+        "run_command":"start bingmaps:"
+    },
+    "ms-news":{
+        "run_command":"start bingnews:"
+    },
+    "ms-solitaire-collection":{
+        "run_command":"start xboxliveapp-1297287741:"
+    },
+    "onenote":{
+        "run_command":"start onenote:"
+    },
+    "paint-3d":{
+        "run_command":"start ms-paint:"
+    },
+    "snipping_tool":{
+        "run_command":"start ms-screenclip:"
+    },
+    "ms-tips":{
+        "run_command":"start ms-get-started:"
+    },
+    "ms-weather":{
+        "run_command":"start msnweather:"
+    },
+    "xbox":{
+        "run_command":"start xbox:"
+    },
+    "store":{
+        "run_command":"start ms-windows-store:"
     }
 }
