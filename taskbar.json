@@ -82,5 +82,8 @@
     },
     "store":{
         "run_command":"start ms-windows-store:"
+    },
+    "recyle-bin":{
+        "run_command":"start shell:RecycleBinFolder"
     }
 }

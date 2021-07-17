@@ -19,6 +19,7 @@ body{
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(7,1fr);
     z-index: 2;
+    padding: 15px;
 }
 .taskbar{
     background-color: #f3f3f3;
@@ -37,6 +38,9 @@ body{
     width: 28px;
     height: 28px;
     padding: 7px;
+}
+.tasks:hover{
+    background: #d8d8d8;
 }
 
 .startmenu{
@@ -227,6 +231,7 @@ body{
 }
 .exit{
     float: right;
+    margin-top: 0;
 }
 #contextmenu{
     position: absolute;
@@ -262,4 +267,36 @@ body{
     text-align: left;
     display: inline;
     background: transparent;
+}
+.desktop_dialouge{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    z-index: 109;
+    background: white;
+    transition: all 0.3s ease-in;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px gray;
+    display: none;
+    padding: 25px;
+    grid-row-gap: 10px;
+}
+.desktop_dialouge button{
+    text-align: left;
+    border-width: 0;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+.desktop_dialouge button:hover{
+    background: #e8e8e8;
+}
+#display_image{
+    display: block;
+}
+.background{
+    width: 100vw;
+    height: calc(100vh - 42px);
 }

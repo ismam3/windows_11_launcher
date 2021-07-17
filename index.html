@@ -7,33 +7,33 @@
     <title>Windows 11</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="user-select: none; -webkit-app-region:drag;">
     <div class="desktop">
         <div class="desktop_apps">
-            <img class="icons" src="chromeicon.png" width="74px" alt="">
-            <div>Google Chrome</div>
+            <img class="icons" id="recycle-bin" src="icons/recycle-bin.png">
+            <span>Recycle Bin</span>
         </div>
     </div>
     <div class="taskbar">
         <div class="taskicon">
-            <img class="tasks" id="startbutton" src="icons/startbutton(1).png"  onclick="clicked()">
-            <img class="tasks" id="cortana" src="icons/cortana.png">
-            <img class="tasks" id="split" src="icons/split.png">
-            <img class="tasks" id="multitask" src="icons/multitask.png">
+            <img class="tasks" id="startbutton" src="icons/startbutton(1).png">
+            <img class="tasks" id="settings" src="icons/settings.png">
+            <img class="tasks" id="mail" src="icons/mail.png">
+            <img class="tasks" id="cmd" src="icons/cmd.png">
             <img class="tasks" id="ms_edge" src="icons/msedge.svg">
             <img class="tasks" id="file_explorer" src="icons/file_explorer.png">
             <img class="tasks" id="notepad" src="icons/notepad.png">
             <img class="tasks" id="store" src="icons/store.png">
         </div>
         <div class="right_bar" style="margin-top: 5px;">
-            <img src="icons/slider.png">
-            <img src="icons/network.png">
+            <img class="upcoming_feature" src="icons/slider.png">
+            <img class="upcoming_feature" src="icons/network.png">
             <div class="timestamp">
                 <div id="time"></div>
                 <div id="date"></div>
             </div>
                 
-            <img src="icons/notification.png">
+            <img class="upcoming_feature" id="notification" src="icons/notification.png">
         </div>
     </div>
     <div id="startmenu" class="startmenu">
@@ -219,7 +219,7 @@
                     <div style="display: inline-block;"></div>
                 </div>
             </div>
-            <div class="exit">
+            <div class="exit appk" id="exit">
                 <img class="icons" id="exit" src="icons/exit.png">
             </div>
         </div>
@@ -229,11 +229,11 @@
             <button style="margin-left: 20px;" onclick="refresh()">Refresh</button>
         </div>
         <div class="line">
-            <button style="margin-left: 20px;">Preferrence</button>
+            <button class="upcoming_feature" style="margin-left: 20px;">Preferrence</button>
         </div>
         <div class="line">
             <img src="icons/display.png">
-            <button onclick="changeBg()">Change display background</button>
+            <button id="changeBg" onclick='setImg()'>Change display background</button>
         </div>
         <div class="line" id="cmd">
             <img src="icons/cmd.png">
@@ -244,12 +244,10 @@
             <button onclick="contextCommand('settings')">Settings</button>
         </div>
     </div>
-</div>
-    <div id="background">
-        <video autoplay muted>
-            <source src="video.webm" type="video/webm">
-        </video>
+    <div id="background" class="background">
+        
     </div>
 </body>
 <script src="script.js"></script>
+<script src="desktop.js"></script>
 </html>

@@ -1,7 +1,8 @@
 {
   "name": "windows_11_launcher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A launcher for windows 11",
+  "displayName": "Windows 11 Launcher",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -13,9 +14,11 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "electron": "^13.1.6",
+    "electron-builder": "^22.11.7",
     "eslint": "^7.30.0"
   },
   "dependencies": {
+    "edit-json-file": "^1.6.0",
     "fs": "0.0.1-security"
   }
 }
