@@ -85,6 +85,21 @@ document.querySelectorAll(".appk").forEach(item=>{
         }
     });
 });
+document.querySelectorAll(".desktop_apps").forEach(item=>{
+    item.addEventListener("click",()=>{
+        let images = item.getElementsByTagName("img");
+        let item_id = images[0].id;
+        if (item_id == "exit") {
+            ipcRenderer.send("exit",true);
+        }
+        else{
+            exec(taskbar_json[item_id].run_command,function(err, data){
+                console.log(err);
+                console.log(data.toString());
+            });
+        }
+    });
+});
 
 
 document.querySelectorAll(".upcoming_feature").forEach(item=>{
