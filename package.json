@@ -7,18 +7,25 @@
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "electron-builder"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "Ismam Labib",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "electron": "^13.1.6",
+    "electron": "^13.1.7",
     "electron-builder": "^22.11.7",
     "eslint": "^7.30.0"
   },
   "dependencies": {
     "edit-json-file": "^1.6.0",
     "fs": "0.0.1-security"
+  },
+  "build": {
+    "win": {
+      "icon": "build/icon.png",
+      "deleteAppDataOnUninstall":true
+    }
   }
 }

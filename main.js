@@ -17,7 +17,7 @@ ipcMain.on("exit",(evnt, data)=>{
 
 function createWindow(){
 	const window = new BrowserWindow({
-		icon:"icons/startbutton(1).png",
+		icon:"F://windows_11/build/icon.png",
 		titleBarStyle: "hiddenInset",
 		webPreferences:{
 			nodeIntegration: true,
